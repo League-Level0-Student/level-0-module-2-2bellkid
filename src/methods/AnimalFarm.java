@@ -17,8 +17,22 @@ AnimalFarm() {
 	/*
 	 * 1. Ask the user which animal they want, then play the sound of that
 	 * animal.
-	 */
-
+	 */String animal= JOptionPane.showInputDialog("What is your favorite animal?");
+if(animal.equals("dog")) {
+playNoise(woofFile);
+}
+else if(animal.equals("duck")) {
+	playNoise(quackFile);
+}
+else if( animal.equals("cow")) {
+	playNoise(mooFile);
+}
+else if(animal.equals("cat")) {
+	playNoise(meowFile);
+}
+else if(animal.equals("llama")) {
+	playNoise(llamaFile);
+}
 	/* 2. Make it so that the user can keep entering new animals. */
 }
 
